@@ -25,12 +25,12 @@ export default function Home() {
             <div className='my-10 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
                 {firedata.map((data) => {
                     return(
-                        <a href={`/videos/${data.id}`} key={data.id} className="glassmorph md:mx-16 mx-6 w-[18rem] lg:w-[26rem] xl:w-[35rem] rounded-lg hover:scale-105 transition-scale duration-300 my-6">
+                        <a href={`/videos/${data.id}`} key={data.id} className="glassmorph md:mx-16 mx-6 w-[18rem] lg:w-[18rem] xl:w-[25rem] rounded-lg hover:scale-105 transition-scale duration-300 my-6">
                             <img src={data.thumbnail} className="w-[46rem] rounded-md" alt='' />
                             <h1 className='md:text-3xl text-2xl my-4 text-center font-bold'>{data.name}</h1>
-                            <div className='flex lg:w-5/12 md:w-8/12 w-9/12 mx-auto'>
-                            <img src={data.authorPFP} className="w-3/12 h-2/6 mt-1 mb-8" />
-                            <h1 className='my-4 text-center md:text-xl px-4 font-semibold'>{data.author}</h1>
+                            <div className='flex lg:w-8/12 md:w-8/12 w-9/12 mx-auto'>
+                            <img src={data.authorPFP} className="w-3/12 h-2/6 mt-1 mb-8 rounded-full" />
+                            <h1 className='my-4 text-center md:text-xl px-4 font-semibold xl:my-6'>{data.author}</h1>
                             </div>
                         </a>
                     )
