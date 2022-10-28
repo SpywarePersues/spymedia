@@ -22,7 +22,7 @@ function productsScreen() {
 
     const htmlJSX = (
         <div>
-            <iframe src={currentData.video} className='mx-10 my-6 w-10/12 h-[35rem] rounded-lg border-4 border-slate-900' allowfullscreen="true"  />
+            <iframe src={currentData.video} width="1000px" className='mx-10 my-6 h-[37rem] rounded-lg border-4 border-slate-900' allowfullscreen="true"  />
             <h1 className='mx-10 mb-6 text-3xl md:text-5xl'>{currentData.name}</h1>
             <h1 className='mb-4 text-xl w-10/12 mx-10 my-6 text-gray-300'>{currentData.desc}</h1>
             <div className='flex lg:w-2/12 md:w-4/12 w-7/12 mx-10'>

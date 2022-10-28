@@ -15,8 +15,7 @@ export default function Navbar(){
                 <ul>
                     <Link href={{pathname: '/'}}><li className="hover:text-gray-100 font-Koho text-3xl">SpyMedia</li></Link>
                 </ul>
-                <ul className="lg:flex justify-between w-7/12 mx-auto mt-2">
-                    <Link href={{pathname: '/shorts'}}><li className="hover:text-gray-400 transition-all duration-300">Shorts</li></Link>
+                <ul className="lg:flex justify-between w-5/12 mx-auto mt-2">
                     <Link href={{pathname: '/feedback'}}><li className="hover:text-gray-400 transition-all duration-300">Feedback</li></Link>
                     <Link href={{pathname: '/upload'}}><li className="hover:text-gray-400 transition-all duration-300">Upload</li></Link>
                     {token ? (<Link href={{pathname: '/login'}}><li className="hover:text-gray-400 transition-all duration-300">{sessionStorage.getItem('Name')}</li></Link>) : (<Link href={{pathname: '/login'}}><li className="hover:text-gray-400 transition-all duration-300">Login</li></Link>)}

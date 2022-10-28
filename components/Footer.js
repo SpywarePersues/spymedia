@@ -14,7 +14,6 @@ export default function Footer(){
                 <div>
                     <p className="font-Koho text-2xl font-bold">Services</p>
                     <ul>
-                    <Link href={{pathname: '/shorts'}}><li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">Shorts</li></Link>
                     <Link href={{pathname: '/feedback'}}><li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">Feedback</li></Link>
                     <Link href={{pathname: '/upload'}}><li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">Upload</li></Link>
                     </ul>
