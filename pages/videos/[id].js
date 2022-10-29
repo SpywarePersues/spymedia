@@ -57,7 +57,7 @@ function productsScreen() {
     console.log(currentData)
 
     return (
-        <ContainerBlock title={currentData.Name}>
+        <ContainerBlock title={currentData.name}>
             {htmlJSX}
         </ContainerBlock>
     )
