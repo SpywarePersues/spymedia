@@ -12,18 +12,20 @@ export default function Footer(){
                     <p>Created by <Link href="https://spypercy.ml">SpywarePerseus.</Link> All Rights Reserved.</p>
                 </div>
                 <div>
-                    <p className="font-Koho text-2xl font-bold">Services</p>
+                    <p className="font-Koho text-2xl font-bold">Pages</p>
                     <ul>
+                    <Link href={{pathname: '/'}}><li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">Home</li></Link>
                     <Link href={{pathname: '/feedback'}}><li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">Feedback</li></Link>
                     <Link href={{pathname: '/upload'}}><li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">Upload</li></Link>
+                    <Link href={{pathname: '/login'}}><li className="hover:text-gray-400 transition-all duration-300 cursor-pointer">Login/Profile</li></Link>
                     </ul>
                 </div>
                 <div>
                 <p className="font-Koho text-2xl font-bold">Socials</p>
                     <ul>
-                        <Link href={{pathname: '/kids'}}><li className="hover:text-gray-100 cursor-pointer flex"><SiFacebook/> <span className="px-5">Facebook</span></li></Link>
-                        <Link href={{pathname: '/kids'}}><li className="hover:text-gray-100 cursor-pointer flex"><SiTwitter /><span className="px-5">Twitter</span></li></Link>
-                        <Link href={{pathname: '/kids'}}><li className="hover:text-gray-100 cursor-pointer flex"><SiInstagram /><span className="px-5">Instagram</span></li></Link>
+                        <Link href={{pathname: '/kids'}}><li className="hover:text-gray-100 cursor-pointer flex"><SiFacebook/> <span className="px-3">Facebook</span></li></Link>
+                        <Link href={{pathname: '/kids'}}><li className="hover:text-gray-100 cursor-pointer flex"><SiTwitter /><span className="px-3">Twitter</span></li></Link>
+                        <Link href={{pathname: '/kids'}}><li className="hover:text-gray-100 cursor-pointer flex"><SiInstagram /><span className="px-3">Instagram</span></li></Link>
                     </ul>
                 </div>
             </div>
